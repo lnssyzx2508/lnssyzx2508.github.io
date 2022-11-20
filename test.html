@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入 PyScript -->
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
+    <title>First PyScript Application</title>
+    <style>
+        py-script {
+            width: 100%;
+            height: 100%;
+            font-size: 20px;
+            text-align: center;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <py-script>
+        import random
+	StudentID = range(1, 53)
+	a = random.sample(StudentID, 52)
+	b = str(a)
+	b = b.replace(",", "|").replace(" ", "")
+	print(b.split("|")[:8])
+	print(b.split("|")[8:16])
+	print(b.split("|")[16:24])
+	print(b.split("|")[24:32])
+	print(b.split("|")[32:40])
+	print(b.split("|")[40:48])
+	print(b.split("|")[48:])
+	print(b)
+    </py-script>
+
+</body>
+
+</html>
