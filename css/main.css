@@ -30,6 +30,7 @@ html {
 }
 body {
   margin: 0;
+  filter: grayscale(1);
 }
 main {
   display: block;
